@@ -12,6 +12,9 @@ container, since I seem to easily forget.
 
 cd nginx-docker/
 docker build .
+
+# Create and run a new container using the image we just created:
+# Note: with docker 0.6.5 you seem to need to pass "-p 80" as well
 docker run <image id> -d
 
 # Get the port that nginx is mapped to:
